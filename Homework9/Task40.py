@@ -1,0 +1,1 @@
+df[df['population']<501]['median_house_value'].agg(['mean'])
