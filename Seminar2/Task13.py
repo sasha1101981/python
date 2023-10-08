@@ -11,3 +11,16 @@
 # Температуры – целые числа и лежат в  диапазоне от –50 до 50
 # Input: 6 -> -20 30 -40 50 10 -10
 # Output: 2
+
+day = int(input())
+thaw = 0
+max = 0
+for i in range(day):
+    temperature = int(input())
+    if temperature > 0:
+        thaw += 1
+    else:
+        if max < thaw:
+            max = thaw
+        thaw = 0
+print(max)

@@ -4,3 +4,24 @@
 # Input: 5
 # Output: 120 
 
+#Решение через while
+
+print('Введите целое неотрицательное число N: ')
+n = int(input())
+factotial = 1
+while n > 1:
+    factotial *= n
+    n -= 1
+print(f'Факториал N равен {factotial}')
+
+
+"""# Решение через for
+
+print('Введите целое неотрицательное число N: ')
+n = int(input())
+factotial = 1
+i = 1
+for i in range(2, n+1):   # от 2, т.к. factorial=1 (умножение на 1 заложили в переменную)
+    factotial *= i        # в отличие от С# увеличение счетчика, прописываем в range
+print(f'Факториал N равен {factotial}')   # по умолчанию он i++
+"""
